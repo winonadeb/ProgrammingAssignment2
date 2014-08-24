@@ -33,7 +33,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve : Returns the inverse of a matrix, assuming it is invertible. Return cached inverse if avail.
+## cacheSolve : Returns the inverse of a matrix, assuming it is invertible. Uses the cached inverse if it has
+## already been calculated and the matrix has not changed.
 ##     matrixList : Given input is a list object created by makeCacheMatrix
 
 cacheSolve <- function(matrixList , ...) {
