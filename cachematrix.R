@@ -9,24 +9,24 @@
 ##     x : Given input is a matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-  	inverseMatrix <- NULL							# Always initialize the inverseMatrix to NULL
+  	inverseMatrix <- NULL					# Always initialize the inverseMatrix to NULL
 
-  	set <- function(y) {							# Function to set the saved matrix to be y, reset inverse
+  	set <- function(y) {					# Function to set the saved matrix to be y, reset inverse
   		x <<- y
   		inverseMatrix <<- NULL
 	}
 
-	get <- function() { x }							# Function to return the currently saved matrix
+	get <- function() { x }					# Function to return the currently saved matrix
 
-	setInverse <- function(solve) { 				# Function to set the inverseMatrix
+	setInverse <- function(solve) { 		# Function to set the inverseMatrix
 		inverseMatrix <<- solve 
 	}	
 
-	getInverse <- function() { 						# Function to return the inverseMatrix
+	getInverse <- function() { 				# Function to return the inverseMatrix
 		inverseMatrix 
 	}				
 
-	list(set=set, get=get,							# Matrix created, List object exposing functions 
+	list(set=set, get=get,					# Matrix created, List object exposing functions 
    		setInverse =setInverse,
    		getInverse=getInverse)
 
