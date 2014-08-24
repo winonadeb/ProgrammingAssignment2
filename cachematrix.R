@@ -1,5 +1,5 @@
 ## ProgrammingAssignment2: Calculating the inverse of a large matrix can be time-consuming. When a matrix is
-## not changing, the inverse remains the same. Create a function that enables the caching of the
+## not changed, the inverse remains the same. Create a function that enables the caching of the
 ## inverse of a matrix (makeCacheMatrix), and then create a function that retrieves the cached inverse when
 ## it is available or calculates the inverse when it is not (cacheSolve). Assume the matrix is invertible. Ensure that
 ## when the makeCacheMatrix is called, the inverse is reset. 
@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve : Returns the inverse of a matrix, assuming it is invertible. Cached inverse returned if avail.
+## cacheSolve : Returns the inverse of a matrix, assuming it is invertible. Return cached inverse if avail.
 ##     matrixList : Given input is a list object created by makeCacheMatrix
 
 cacheSolve <- function(matrixList , ...) {
