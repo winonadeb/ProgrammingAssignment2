@@ -1,7 +1,7 @@
 ## ProgrammingAssignment2: Calculating the inverse of a large matrix can be time-consuming. When a matrix is
-## not changing, the inverse remains the same. Create a function that creates enables the caching of the
+## not changing, the inverse remains the same. Create a function that enables the caching of the
 ## inverse of a matrix (makeCacheMatrix), and then create a function that retrieves the cached inverse when
-## it is available or calculates the inverse when it is not. Assume the matrix is invertible. Ensure that
+## it is available or calculates the inverse when it is not (cacheSolve). Assume the matrix is invertible. Ensure that
 ## when the makeCacheMatrix is called, the inverse is reset. 
 ## CREDITS: Many thanks to the explanations posted by Gregory Horne, Bill Hilton, and Rock Pereira in the discussion threads...
 
